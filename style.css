@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+:root{
+    --main-clr: #263238;
+    --dark-clr: #000a12;
+    --light-clr:#4f5b62;
+}
+
+/* 內定標籤設定 */
+body{
+    min-width: 500px;
+    margin: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: white;
+    background-color: var(--light-clr);
+}
+header{
+    height: 10vh;width: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: var(--dark-clr);
+    text-align: center;
+    font-size:20px;
+}
+main{
+    height: 80vh; width: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: var(--main-clr);
+}
+footer{
+    height: 15vh;
+    background-color: var(--dark-clr);
+}
+ 
+h1,p{
+    margin: 0;
+    text-align: center;
+}
+hr{
+    width: 450px;
+    border: 3px solid;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+label{
+    display: block;
+    width: 100px;
+    /* border: 1px solid white; */
+}
+input{
+    height: 30px;
+}
+input[type='text']{
+    padding: 0 10px 0;
+    border-radius:10px;
+    width: 200px;
+}
+input[type='button']{
+    width: 90px; height: 30px;
+}
+
+/* class 設定 */
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.gooding{
+    height: 70vh;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: var(--light-clr);
+
+}
+.choice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+}
+.status{
+    width: 30%;
+}
+.choiceform{
+    width: 500px;
+    /* border: 1px solid black; */
+}
+.statusform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    /* border: 1px solid black; */
+}
+
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+}
+#checkb{
+    height: 40px;
+}
+
+@media (max-width:1200px){
+    .gooding{
+        height: auto;
+    }
+    .choice{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width:auto;
+    }
+    .status{
+        margin: 20px 0 20px;
+        width: 500px;
+    }
+    .typebt{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    input[type='button']{
+        width: 90px; height: 30px;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+
+    main{
+        height: auto;
+    }
+    hr{
+        width: auto;
+    }
+}
+@media (max-width:500px){
+    .gooding{
+        height: auto;
+        width: 500px;
+    }
+    .choice{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width:500px;
+    }
+    .status{
+        margin: 20px 0 20px;
+        width: 500px;
+    }
+    .typebt{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    input[type='button']{
+        width: 90px; height: 30px;
+    }
+    .container{
+        flex-direction: column;
+        width: 500px;
+    }
+
+
+    main{
+        height: auto;
+        width: 500px;
+    }
+    hr{
+        width: auto;
+    }
+}
+  
+
+
+#tab{ width:auto; height:auto;}
+#tab > ul{ display:block; margin:0;list-style:none;}
+.tab-title{list-style:none;}
+#tab > ul > li{ display:inline-block; vertical-align:top;font-family:'微軟正黑體'; margin:0 0 ; border:1px solid #BCBCBC; height:25px; line-height:25px; background:#cdcdcd;padding:0 15px;list-style:none; box-sizing:border-box;}
+#tab >  ul > li a{ color: white; text-decoration:none;}
+#tab > ul > li.active{ border-bottom:1px solid #fff; background:var(--main-clr);}
+#tab > .tab-inner{ clear:both; color:white; border: none;}
+.tab-inner{ padding:0; height:auto ;}
